@@ -1,0 +1,150 @@
+---
+const windowsInstallerUrl = "https://github.com/1abdullahr1/simplest-video-downloader/releases/latest/download/Pullar_Setup_v1.2.0.exe";
+const windowsPortableUrl = "https://github.com/1abdullahr1/simplest-video-downloader/releases/latest/download/Pullar_v1.2.0_Portable.zip";
+const androidApkUrl = "https://github.com/1abdullahr1/simplest-video-downloader/releases/latest/download/Pullar-v1.0.0-Android-debug.apk";
+const releasesPageUrl = "https://github.com/1abdullahr1/simplest-video-downloader/releases";
+---
+
+<section class="downloads-section">
+  <div class="container">
+    <div class="downloads-grid">
+      <!-- Windows Download Card -->
+      <div class="glass-card download-card">
+        <div class="card-header">
+          <div class="os-icon-wrapper">
+            <!-- Windows SVG Icon -->
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" class="os-icon">
+              <path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/>
+            </svg>
+          </div>
+          <div class="card-titles">
+            <span class="badge badge-brown">Windows 10 / 11</span>
+            <h2 class="card-title">Pullar for Windows</h2>
+          </div>
+        </div>
+
+        <p class="card-specs">64-bit • Native Qt 6 C++ • yt-dlp & FFmpeg</p>
+
+        <div class="card-actions">
+          <a href={windowsInstallerUrl} class="btn-primary" download>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span>Download Installer (.exe)</span>
+          </a>
+
+          <a href={windowsPortableUrl} class="btn-secondary" download>
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+            </svg>
+            <span>Portable ZIP (.zip)</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Android Download Card -->
+      <div class="glass-card download-card">
+        <div class="card-header">
+          <div class="os-icon-wrapper">
+            <!-- Android Robot SVG Icon -->
+            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" class="os-icon">
+              <path d="M17.523 15.3414c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.551 0 .9993.4482.9993.9993.0001.5511-.4483.9997-.9993.9997m-11.046 0c-.5511 0-.9993-.4486-.9993-.9997s.4482-.9993.9993-.9993c.5511 0 .9993.4482.9993.9993 0 .5511-.4482.9997-.9993.9997m11.4045-6.02l1.9973-3.4592a.416.416 0 00-.1521-.5676.416.416 0 00-.5676.1521l-2.0223 3.503C15.5896 8.4239 13.8488 8 12 8s-3.5896.4239-5.1368 1.0507L4.8409 5.5477a.416.416 0 00-.5676-.1521.416.416 0 00-.1521.5676l1.9973 3.4592C2.6889 11.1867.3432 14.6589 0 18.761h24c-.3432-4.1021-2.6889-7.5743-6.1185-9.4396"/>
+            </svg>
+          </div>
+          <div class="card-titles">
+            <span class="badge badge-blue">Android 7.0+</span>
+            <h2 class="card-title">Pullar for Android</h2>
+          </div>
+        </div>
+
+        <p class="card-specs">ARM64 & x86_64 • Native Kotlin & Jetpack Compose</p>
+
+        <div class="card-actions">
+          <a href={androidApkUrl} class="btn-primary" download>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+            <span>Download APK (.apk)</span>
+          </a>
+
+          <a href={releasesPageUrl} class="btn-secondary" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+            <span>All Releases & Sources</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .downloads-section {
+    padding: 20px 0 50px;
+  }
+
+  .downloads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+  }
+
+  .download-card {
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 12px;
+  }
+
+  .os-icon-wrapper {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--surface-dark);
+    border: 1px solid var(--surface-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--maya-blue);
+    flex-shrink: 0;
+  }
+
+  .card-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .card-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--light-apricot);
+    letter-spacing: -0.01em;
+  }
+
+  .card-specs {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin: 8px 0 24px;
+  }
+
+  .card-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: auto;
+  }
+</style>

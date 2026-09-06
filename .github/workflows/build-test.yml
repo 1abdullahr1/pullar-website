@@ -1,0 +1,36 @@
+name: Build & Verify Astro Website
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Test Astro Production Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Astro static site
+        run: npm run build
+
+      - name: Upload dist build artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: Pullar-Website-dist
+          path: dist/
+          retention-days: 14

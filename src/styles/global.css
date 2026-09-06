@@ -1,0 +1,117 @@
+:root {
+  --coffee-bean: #1a110f;
+  --light-apricot: #ffebc2;
+  --toffee-brown: #945e38;
+  --maya-blue: #7cc6fe;
+  --surface-dark: #221614;
+  --surface-card: #2a1b18;
+  --surface-border: #442b24;
+  --text-muted: #c4aca0;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: var(--coffee-bean);
+  color: var(--light-apricot);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Glassmorphic glowing card */
+.glass-card {
+  background: var(--surface-card);
+  border: 1px solid var(--surface-border);
+  border-radius: 20px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.glass-card:hover {
+  border-color: var(--toffee-brown);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Buttons */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: var(--maya-blue);
+  color: var(--coffee-bean);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px 26px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #92d4fe;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(124, 198, 254, 0.3);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: transparent;
+  color: var(--light-apricot);
+  border: 1px solid var(--toffee-brown);
+  font-weight: 600;
+  font-size: 14px;
+  padding: 12px 22px;
+  border-radius: 12px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--surface-dark);
+  border-color: var(--light-apricot);
+}
+
+/* Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.badge-blue {
+  background: rgba(124, 198, 254, 0.12);
+  color: var(--maya-blue);
+  border: 1px solid rgba(124, 198, 254, 0.3);
+}
+
+.badge-brown {
+  background: rgba(148, 94, 56, 0.2);
+  color: var(--light-apricot);
+  border: 1px solid var(--toffee-brown);
+}

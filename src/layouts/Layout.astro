@@ -1,0 +1,33 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Pullar - Don't just watch—pull it",
+  description = "High-speed segmented video and audio downloader for Windows and Android. Built-in media player, playlist support, 100% free and open source."
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content="/app-logo.png" />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#1a110f" />
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
