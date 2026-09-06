@@ -1,7 +1,8 @@
 ---
 const windowsInstallerUrl = "https://github.com/1abdullahr1/simplest-video-downloader/releases/latest/download/Pullar_Setup_v1.2.0.exe";
 const windowsPortableUrl = "https://github.com/1abdullahr1/simplest-video-downloader/releases/latest/download/Pullar_v1.2.0_Portable.zip";
-const androidApkUrl = "https://github.com/1abdullahr1/simplest-video-downloader/releases/latest/download/Pullar-v1.0.0-Android-debug.apk";
+const androidArm64Url = "https://github.com/1abdullahr1/simplest-video-downloader/releases/latest/download/Pullar-v1.2.0-arm64-v8a.apk";
+const androidUniversalUrl = "https://github.com/1abdullahr1/simplest-video-downloader/releases/latest/download/Pullar-v1.2.0-universal.apk";
 const releasesPageUrl = "https://github.com/1abdullahr1/simplest-video-downloader/releases";
 ---
 
@@ -59,25 +60,23 @@ const releasesPageUrl = "https://github.com/1abdullahr1/simplest-video-downloade
           </div>
         </div>
 
-        <p class="card-specs">ARM64 & x86_64 • Native Kotlin & Jetpack Compose</p>
+        <p class="card-specs">ARM64-v8a (~55 MB) & Universal • Material You • Native Jetpack Compose</p>
 
         <div class="card-actions">
-          <a href={androidApkUrl} class="btn-primary" download>
+          <a href={androidArm64Url} class="btn-primary" download>
             <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
               <line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
-            <span>Download APK (.apk)</span>
+            <span>Download APK (ARM64 ~55 MB)</span>
           </a>
 
-          <a href={releasesPageUrl} class="btn-secondary" target="_blank" rel="noopener noreferrer">
+          <a href={androidUniversalUrl} class="btn-secondary" download>
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"/>
-              <line x1="12" y1="8" x2="12" y2="12"/>
-              <line x1="12" y1="16" x2="12.01" y2="16"/>
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
             </svg>
-            <span>All Releases & Sources</span>
+            <span>Universal APK (All Devices)</span>
           </a>
         </div>
       </div>
